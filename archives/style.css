@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 main {
@@ -20,4 +21,55 @@ main {
     width: 98%;
     background: #f7f5f4;
     border: 6px solid #dedcda;
+}
+
+.img-align {
+    height: 100%;
+    width: fit-content;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#image {
+    width: 40vh;
+    object-fit: contain;
+    border: 6px solid #84888f;
+    margin-right: 50px;
+}
+
+.posts {
+    height: 100%;
+    width: fit-content;
+    position: relative;
+    margin: 50px;
+}
+
+.block {
+    height: fit-content;
+    width: fit-content;   
+}
+
+#title {
+    cursor: pointer;
+}
+
+#title:hover {
+    text-decoration: underline;
+    color: #84888f;
+}
+
+#info {
+    text-decoration: underline;
+    color: #84888f;
+}
+
+#tags {
+    cursor: pointer;
+    color: #d5d3c3;
+}
+
+#tags:hover {
+    text-decoration: underline;
+    filter: brightness(50%);
 }
