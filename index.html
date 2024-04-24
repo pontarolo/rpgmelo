@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <linK rel="stylesheet" href="icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Rodrigo Pontarolo</title>
 </head>
+
 <body>
-    <div class="bg"></div>
     <main>
-        <img class="ufsc" src="assets/img/ufsc.png">
-        <h1>Rodrigo Pontarolo</h1>
-        <span>Computer Engineering</span>
-        <hr>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/rodrigo-granemann/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/pontarolo" class="fa fa-github"></a>
-            <a href="archives/index.html" class="fa fa-rss"></a>
-            <a href="mailto:rodrigo@pontarolo.org" class="fa fa-envelope"></a>
+        <div class="terminal">
+            <div class="neofetch">
+                <div class="image">
+                    <img id="ufsc" src="assets/img/ufsc.png">
+                </div>
+                <div class="text">
+                    <div class="text-content">
+                        <p id="bold">rodrigo@localhost</p>
+                        <p><span id="bold">OS:</span> Guix System</p>
+                        <p><span id="bold">Kernel:</span> Linux</p>
+                        <p><span id="bold">Shell:</span> zsh</p>
+                        <p><span id="bold">Resolution:</span><span id="resolution"></span></p>
+                        <p><span id="bold">WM:</span><span id="browser"></span></p>
+                        <p><span id="bold">Date:</span><span id="date"></span></p>
+                        <p><span id="bold">CPU:</span><span id="cpu"></span></p>
+                        <p><span id="bold">Age:</span> 18</p>
+                        <p><span id="bold">Studying:</span> Computer Engineering</p>
+                        <img id="palette" src="assets/img/palette.png">
+                        <script>
+                            document.getElementById('resolution').innerHTML = ' ' + screen.width + 'x' + screen.height;
+                            document.getElementById('browser').innerHTML = ' ' + navigator.userAgent;
+
+                            const date = new Date();
+
+                            document.getElementById('date').innerHTML = ' ' + date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
+                            document.getElementById('cpu').innerHTML = ' ' + navigator.hardwareConcurrency + ' cores';
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="shell">
+                <span id="shell-text">~</span>
+                <input spellcheck="false" id="cli" type="text" value="Type 'help' to print all the commands"
+                    onblur="this.focus()" autofocus>
+                <script src="js/commands.js"></script>
+            </div>
         </div>
     </main>
 </body>
+
 </html>
