@@ -11,41 +11,30 @@
 <body>
     <main>
         <div class="terminal">
-            <div class="neofetch">
-                <div class="image">
-                    <img id="ufsc" src="assets/img/ufsc.png">
-                </div>
-                <div class="text">
-                    <div class="text-content">
-                        <p id="bold">rodrigo@localhost</p>
-                        <p><span id="bold">OS:</span> Guix System</p>
-                        <p><span id="bold">Kernel:</span> Linux</p>
-                        <p><span id="bold">Shell:</span> zsh</p>
-                        <p><span id="bold">Resolution:</span><span id="resolution"></span></p>
-                        <p><span id="bold">WM:</span><span id="browser"></span></p>
-                        <p><span id="bold">Date:</span><span id="date"></span></p>
-                        <p><span id="bold">CPU:</span><span id="cpu"></span></p>
-                        <p><span id="bold">Age:</span> 18</p>
-                        <p><span id="bold">Studying:</span> Computer Engineering</p>
-                        <img id="palette" src="assets/img/palette.png">
-                        <script>
-                            document.getElementById('resolution').innerHTML = ' ' + screen.width + 'x' + screen.height;
-                            document.getElementById('browser').innerHTML = ' ' + navigator.userAgent;
-
-                            const date = new Date();
-
-                            document.getElementById('date').innerHTML = ' ' + date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
-                            document.getElementById('cpu').innerHTML = ' ' + navigator.hardwareConcurrency + ' cores';
-                        </script>
+                <div class="neofetch">
+                    <div class="image">
+                        <img id="ufsc" src="assets/img/ufsc.png">
+                    </div>
+                    <div class="text">
+                        <div class="text-content">
+                            <p id="bold">rodrigo@localhost</p>
+                            <p><span id="bold">OS:</span> Arch Linux x86_64</p>
+                            <p><span id="bold">Kernel:</span> Linux</p>
+                            <p><span id="bold">Shell:</span> zsh</p>
+                            <p><span id="bold">Resolution:</span><span id="resolution"></span></p>
+                            <p><span id="bold">WM:</span><span id="browser"></span></p>
+                            <p><span id="bold">Date:</span><span id="date"></span></p>
+                            <p><span id="bold">CPU:</span><span id="cpu"></span></p>
+                            <p><span id="bold">Age:</span> 18</p>
+                            <p><span id="bold">Studying:</span> Computer Engineering</p>
+                            <img id="palette" src="assets/img/palette.png">
+                            <script src="js/neofetch.js"></script>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="shell">
-                <span id="shell-text">~</span>
-                <input spellcheck="false" id="cli" type="text" value="Type 'help' to print all the commands"
-                    onblur="this.focus()" autofocus>
-                <script src="js/commands.js"></script>
-            </div>
+                <div class="shell">
+                    <span id="shell-text">~ <a href="archives/index.html">blog</a> | <a href="https://www.linkedin.com/in/rodrigo-granemann/">linkedin</a> | <a href="https://github.com/pontarolo">github</a></span>
+                </div>
         </div>
     </main>
 </body>
