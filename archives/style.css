@@ -21,6 +21,7 @@ main {
     width: 98%;
     background: #f7f5f4;
     border: 6px solid #dedcda;
+    overflow: scroll;
 }
 
 .img-align {
@@ -32,7 +33,7 @@ main {
 }
 
 #image {
-    width: 40vh;
+    width: 350px;
     object-fit: contain;
     border: 6px solid #84888f;
     margin-right: 50px;
