@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css');
 
-
-@media only screen and (max-width: 800px) {
-   
-    .terminal {
-        max-width: 400px;
-        max-height: 900px;
-    }
-
-    .image {
-        display: none;
-    }
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -36,63 +22,29 @@ main {
     position: relative;
 }
 
-.terminal {
-    height: 400px;
-    width: 700px;
+.content {
+    height: 20%;
+    width: 20%;
     background: #f7f5f4;
     border: 6px solid #dedcda;
     overflow: scroll;
-}
-
-.neofetch {
-    width: 100%;
-    height: 80%;
     display: flex;
-    position: relative;
-}
-
-.image {
-    height: 100%;
-    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #ufsc {
     position: relative;
-    width: 90%;
+    width: 300px;
     filter: grayscale(1);
-    margin: 20px;
 }
 
-.text {
-    width: 60%;
-    height: 100%;
-}
-
-.text-content {
-    height: 100%;
-    margin: 20px;
-}
-
-#bold {
-    font-weight: bold;
-}
-
-#palette {
+#text {
+    font-size: 0.8em;
     margin-top: 20px;
 }
 
-.shell {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-}
-
-#shell-text {
-    margin-left: 20px;
-    font-size: 0.8em;
-}
-
-input:focus {
-    outline: none !important;
+#warning {
+    color: red;
 }
