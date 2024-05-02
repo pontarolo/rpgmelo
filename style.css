@@ -27,7 +27,7 @@ main {
     width: 400px;
     background: #f7f5f4;
     border: 6px solid #dedcda;
-    overflow: scroll;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
